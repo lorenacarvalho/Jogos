@@ -23,7 +23,7 @@ def modo_limitado(numero_secreto, nivel):
     for rodada in range(1, nivel + 1):
     
         print('\nTentativa {}'.format(rodada))
-        chute = int(input('Digite um número: '))
+        chute = int(input('Digite um número entre 1 e 100: '))
         chute_maior = chute > numero_secreto
         chute_menor = chute < numero_secreto 
         acerto = chute == numero_secreto
