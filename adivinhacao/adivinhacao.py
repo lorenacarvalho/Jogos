@@ -1,15 +1,16 @@
 import random
-import niveis
+from adivinhacao import niveis
 
-def jogar():      
+
+def jogar():
     print()
     print("*" * 50)
     print('{:*^50}'.format(' Bem vindo ao jogo de Adivinhação! '))
     print("*" * 50)
 
     numero_secreto = random.randrange(1, 101)
-    #print(numero_secreto)
-    
+    # print(numero_secreto)
+
     print('Níveis de dificuldade: \n(1)Fácil (2)Médio (3)Difícil (4)Modo Infinito')
     nivel = int(input('Escolha o nível de dificuldade: '))
 
@@ -29,5 +30,6 @@ def jogar():
 
     print("\n* Fim de Jogo *")
 
-if __name__ == "__main__" :
+
+if __name__ == "__main__":
     jogar()

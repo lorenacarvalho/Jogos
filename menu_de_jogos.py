@@ -1,6 +1,7 @@
-import adivinhacao
-import forca
+from adivinhacao import adivinhacao
+from forca import forca
 import os
+
 
 def escolher_jogo():
     print()
@@ -14,8 +15,8 @@ def escolher_jogo():
     if jogo == 1:
         forca.jogar()
     elif jogo == 2:
-        adivinhacao.jogar()  
+        adivinhacao.jogar()
 
-      
+
 if __name__ == '__main__':
     escolher_jogo()
