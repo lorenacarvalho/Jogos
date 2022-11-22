@@ -1,3 +1,4 @@
+import os 
 import random
 
 LETRA_ESCONDIDA = '_'
@@ -17,7 +18,7 @@ def jogar():
     print("*" * 50)
 
     palavras_possiveis = []
-    with open("forca/palavras_possiveis.txt", "r") as arquivo:
+    with open(os.getcwd() + "/forca/palavras_possiveis.txt", "r") as arquivo:
         palavras_possiveis = [linha.strip() for linha in arquivo]
 
     indice = random.randrange(0, len(palavras_possiveis))
@@ -27,7 +28,7 @@ def jogar():
     print(formatar(letras_acertadas))
 
     erros = 0
-    ERROS_MAX = 6
+    ERROS_MAX = 8
 
     while True:
         chute = input('Tente uma letra? ')

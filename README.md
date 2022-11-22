@@ -2,14 +2,8 @@
 
 <p align="center"> 🚀 Projeto para elaboração de dois jogos simples na linguagem Python. 🚀
 
-<h4 align="center"> Adivinhação de um Número:
-	✔️  Concluído
+<h4 align="center"> Adivinhação de um Número e Jogo da Forca
 </h4>
-
-<h4 align="center"> Jogo da Forca:
-	🚧  Em construção  
-</h4>
-
 
 </p>
 
@@ -29,5 +23,14 @@ Possui um Menu de Jogos onde pode ser escolhido qual dos jogos vai ser iniciado,
 
 ## Jogo da Forca
 ---
-<h4 align="center"> 🚧 Em andamento! 🛠️
+### ⚙️ Funcionalidades: 
+- Seleção dinâmica de palavras: As palavras para a Forca são selecionadas a partir de um arquivo com várias opções. Até o momento apenas nomes de frutas estão disponíveis.
 
+- Limite de tentativas: O jogo contabiliza apenas as tentativas erradas, num limite de 8 tentativas. A cada erro é mostrado para o jogador quantas tentativas faltam para o limite estipulado.
+
+### Como executar:
+```bash
+cd Jogos
+
+python3 menu_de_jogos.py
+```
